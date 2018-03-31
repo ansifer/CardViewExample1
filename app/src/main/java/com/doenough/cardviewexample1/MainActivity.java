@@ -22,10 +22,14 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         arrayList = new ArrayList<>();
-        arrayList.add(new Custom("Hello"));
-        arrayList.add(new Custom("Hey"));
-        arrayList.add(new Custom("Hi"));
-        arrayList.add(new Custom("Hola"));
+        arrayList.add(new Custom("HELLO"));
+        arrayList.add(new Custom("HALLO"));
+        arrayList.add(new Custom("CIAO"));
+        arrayList.add(new Custom("HOLA"));
+        arrayList.add(new Custom("BONJOUR"));
+        arrayList.add(new Custom("NAMASTE"));
+        arrayList.add(new Custom("SALAAM"));
+        arrayList.add(new Custom("OLÀ"));
         arrayAdapter = new CustomAdapter(this, arrayList);
         recyclerView.setAdapter(arrayAdapter);
     }
